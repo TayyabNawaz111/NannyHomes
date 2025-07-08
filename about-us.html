@@ -84,11 +84,11 @@
       crossorigin="anonymous"
     />
 
-    <link
+    <!-- <link
       rel="stylesheet"
       media="all"
       href="https://cdn.sittercity.com/92fd525e64efd7d29f2e5f6a1f801e2ffcc58100/assets/manifests/sittercity-6a6b9a857069d43f2ec059aa808eb1e7f6bb0f9f8f97448279fcf38554d98e39.css"
-    />
+    /> -->
     <link
       rel="stylesheet"
       media="all"
@@ -111,8 +111,7 @@
         </div>
       </div>
     </noscript>
-
-     <header class="header header--mobile">
+    <header class="header header--mobile">
       <div class="header-mobile__wrapper">
         <input type="checkbox" id="header__checkbox" class="header__checkbox" />
         <label for="header__checkbox" class="header__checkbox--open">
@@ -149,20 +148,21 @@
             </g>
           </svg>
         </label>
-        <a aria-label="Nanny Homes" class="nav-logo__container" href="/">
-          <img src="assets/logo.png" alt="Nanny Homes Logo" style="height: 50px;"/>
-
+        <a aria-label="Nanny Homes" class="nav-logo__container" href="#">
+          <img
+            src="assets/logo.png"
+            alt="Nanny Homes Logo"
+            style="height: 50px"
+          />
         </a>
         <nav class="nav-navigation" role="navigation">
           <ul class="nav-navigation__list">
             <li class="nav-navigation__item">
-              <a class="nav-primary-button nav-outline-button" href="/login"
-                >Log in</a
-              >
+              <a class="nav-primary-button nav-outline-button">Find a nanny</a>
             </li>
             <li class="nav-navigation__item">
               <button class="login-dropdown-button nav-primary-button">
-                Sign Up
+                Find a job
               </button>
             </li>
           </ul>
@@ -172,18 +172,10 @@
             <h3 class="login-dropdown-title">I'm a...</h3>
           </li>
           <li>
-            <a
-              class="nav-primary-button nav-outline-button"
-              href="/registration?member_type=seeker"
-              >Parent</a
-            >
+            <a class="nav-primary-button nav-outline-button">Parent</a>
           </li>
           <li>
-            <a
-              class="nav-primary-button nav-outline-button"
-              href="/sitter/account"
-              >Sitter</a
-            >
+            <a class="nav-primary-button nav-outline-button">Sitter</a>
           </li>
         </ul>
 
@@ -191,19 +183,10 @@
           <nav class="nav-navigation container row" role="navigation">
             <div class="nav-navigation__wrapper col-xs-offset-1 col-xs-10">
               <ul class="nav-navigation__list">
+                <li class="nav-navigation__item"></li>
+
                 <li class="nav-navigation__item">
-                  <a
-                    rel="external"
-                    class="nav-navigation__link"
-                    href="https://support.sittercity.com/"
-                    >Help</a
-                  >
-                </li>
-                <li class="nav-navigation__item">
-                  <a
-                    rel="external"
-                    class="nav-navigation__link"
-                    href="/sitter/account"
+                  <a rel="external" class="nav-navigation__link"
                     >Join as a sitter</a
                   >
                 </li>
@@ -215,30 +198,32 @@
     </header>
 
     <header class="header header--desktop row">
-      <a aria-label="Nanny Homes" class="nav-logo__container col-sm-2" href="/">
-      <img 
-        src="assets/logo.png" 
-        alt="Nanny Homes Logo" 
-        style="height: 110px; width: auto; background: transparent;margin-top: -25px; margin-left: 20px;">
+      <a aria-label="Nanny Homes" class="nav-logo__container col-sm-2" href="#">
+        <img
+          src="assets/logo.png"
+          alt="Nanny Homes Logo"
+          style="
+            height: 110px;
+            width: auto;
+            background: transparent;
+            margin-top: -25px;
+            margin-left: 20px;
+          "
+        />
       </a>
       <nav class="nav-navigation" role="navigation">
         <ul class="nav-navigation__list">
           <li class="nav-navigation__item">
-            <a
-              rel="external"
-              class="nav-navigation__link"
-              href="https://support.sittercity.com/"
-              >Help</a
+            <a rel="external" class="nav-navigation__link" href="index.html"
+              >Home</a
             >
           </li>
           <li class="nav-navigation__item">
-            <a class="nav-primary-button nav-outline-button" href="/login"
-              >Log in</a
-            >
+            <a class="nav-primary-button nav-outline-button" href="#">Find a nanny</a>
           </li>
           <li class="nav-navigation__item">
             <button class="login-dropdown-button nav-primary-button">
-              Sign Up
+              Find a job
             </button>
           </li>
         </ul>
@@ -248,18 +233,10 @@
           <h3 class="login-dropdown-title">I'm a...</h3>
         </li>
         <li>
-          <a
-            class="nav-primary-button nav-outline-button"
-            href="/registration?member_type=seeker"
-            >Parent</a
-          >
+          <a class="nav-primary-button nav-outline-button">Parent</a>
         </li>
         <li>
-          <a
-            class="nav-primary-button nav-outline-button"
-            href="/sitter/account"
-            >Sitter</a
-          >
+          <a class="nav-primary-button nav-outline-button">Sitter</a>
         </li>
       </ul>
     </header>
@@ -528,21 +505,6 @@
       </footer>
     </div>
 
-    <a href="#" id="top-link">Jump to Top</a>
-
-    <div class="day-zero-overlay" id="day-zero-overlay">
-      <div class="wrap-container">
-        <p>
-          <strong>Today only!</strong> Save up to <strong>50%</strong> on a<br /><strong
-            >Nanny Homes Premium membership.</strong
-          >
-        </p>
-        <a
-          href="/registration?member_type=seeker"
-          class="day-zero-cta button-large-orange"
-          >Register now</a
-        >
-      </div>
-    </div>
+   
   </body>
 </html>
