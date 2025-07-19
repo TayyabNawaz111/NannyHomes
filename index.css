@@ -3436,3 +3436,70 @@ main {
     text-align: center;
   }
 }
+.card-section {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  justify-content: center;
+}
+
+/* Card styling */
+.card {
+  flex: 1 1 100%;
+  max-width: 100%;
+}
+
+.card-box {
+  display: block;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease;
+}
+
+.card-box:hover {
+  transform: translateY(-5px);
+}
+
+.card-img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 16px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+@media (min-width: 600px) {
+  .card {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (min-width: 900px) {
+  .card {
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+  }
+}

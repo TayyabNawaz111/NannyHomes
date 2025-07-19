@@ -103,6 +103,14 @@
         <nav class="nav-navigation" role="navigation">
           <ul class="nav-navigation__list">
             <li class="nav-navigation__item">
+              <a
+                rel="external"
+                class="nav-navigation__link"
+                href="about-us.html"
+                >About us</a
+              >
+            </li>
+            <li class="nav-navigation__item">
               <a class="nav-primary-button nav-outline-button">Find a nanny</a>
             </li>
             <li class="nav-navigation__item">
@@ -164,7 +172,9 @@
             >
           </li>
           <li class="nav-navigation__item">
-            <a class="nav-primary-button nav-outline-button" href="#">Find a nanny</a>
+            <a class="nav-primary-button nav-outline-button" href="#"
+              >Find a nanny</a
+            >
           </li>
           <li class="nav-navigation__item">
             <button class="login-dropdown-button nav-primary-button">
@@ -203,24 +213,12 @@
         <picture
           class="block w-full -mt-8 md:-mt-4 md:ml-auto md:-mr-2 lg:mr-auto lg:px-10"
         >
-          <source
-            media="(max-width: 767px)"
-            srcset="
-              //images.ctfassets.net/wmwzystk5o45/2g1S7lMkSWbY9gdwSFBmVc/04d6ee118229fb3032795e2df1d79b1c/Hero_image__4_.png?w=700
-            "
-          />
-          <source
-            media="(max-width: 1023px)"
-            srcset="
-              //images.ctfassets.net/wmwzystk5o45/g5KeJpA3SBT4HbV28oPOo/42a5fea1a28def8e4b1b827b2a8bcd8e/Tablet_hero.png?w=1200
-            "
-          />
           <img
             alt="Smiling babysitters and children"
             class="max-w-none w-full md:w-3/4 md:ml-auto lg:w-full"
             width="2800"
             height="1286"
-            src="assets/hero.png"
+            src="assets/Hero Image.png"
           />
         </picture>
 
@@ -288,610 +286,31 @@
           </form>
         </div>
       </section>
-
-      <!-- <section
-        class="publications flex w-full max-w-none h-auto min-h-344 md:min-h-392 -mt-56 md:-mt-24"
-      >
-        <div class="self-end w-full mb-16 md:mb-28 px-6 lg:px-32">
-          <p class="text-xs uppercase text-grey-body font-medium">Trusted by</p>
-          <ul
-            class="flex items-center justify-between space-x-2 max-h-20 h-full pb-0 pt-2 md:pt-4 lg:pt-10"
-          >
-            <li>
+      <section class="card-section">
+        <div class="card-container">
+          <div class="card">
+            <a class="card-box" href="#">
               <img
-                class="w-44 h-24 md:w-72 md:h-40 lg:w-131 lg:h-71"
-                alt="Good Morning America"
-                loading="lazy"
-                src="https://cdn.sittercity.com/0abd1144e379e1d52015a2737ea763dc3569b0b5/packs/media/images/logos/good_morning_america-b6be9114732c84cf9203c2e2e811d05b.svg"
-              />
-            </li>
-            <li>
-              <img
-                class="w-60 h-10 md:w-72 md:h-11 lg:w-141 lg:h-22"
-                alt="Today Show"
-                loading="lazy"
-                src="https://cdn.sittercity.com/0abd1144e379e1d52015a2737ea763dc3569b0b5/packs/media/images/logos/today_show-0ec5c05f3cb51831bfcfde91988bb9c0.svg"
-              />
-            </li>
-            <li>
-              <img
-                class="w-47 h-34 md:w-72 md:h-51 lg:w-100 lg:h-71"
-                alt="The New York Times"
-                loading="lazy"
-                src="https://cdn.sittercity.com/0abd1144e379e1d52015a2737ea763dc3569b0b5/packs/media/images/logos/new_york_times-1e926346239f4926eefc8e9026b6acee.svg"
-              />
-            </li>
-            <li>
-              <img
-                class="w-77 h-16 md:w-72 md:h-15 lg:w-192 lg:h-40"
-                alt="Washington Post"
-                loading="lazy"
-                src="https://cdn.sittercity.com/0abd1144e379e1d52015a2737ea763dc3569b0b5/packs/media/images/logos/washington_post-99024e4f0261e6a230dcd4c0b2c4adbb.svg"
-              />
-            </li>
-            <li>
-              <img
-                class="w-38 h-10 md:w-72 md:h-18 lg:w-141 lg:h-35"
-                alt="Forbes"
-                loading="lazy"
-                src="https://cdn.sittercity.com/0abd1144e379e1d52015a2737ea763dc3569b0b5/packs/media/images/logos/forbes-a0dddaafb0af99b74ac2e27f095cc846.svg"
-              />
-            </li>
-          </ul>
-        </div>
-      </section> -->
-
-      <!-- <section class="md:pt-0 mb-12 mt-8 md:mt-20 lg:flex">
-        <div class="mx-6 mt-6 mb-4 lg:flex-1 lg:my-auto 2xl:flex-none">
-          <h2
-            class="font-medium text-grey-header text-m2 mb-2 md:font-semibold md:text-l lg:mx-auto lg:max-w-md 2xl:ml-40 2xl:mr-0"
-          >
-            Sitters with the experience & skills you need
-          </h2>
-          <p
-            class="text-m text-grey-body lg:mx-auto lg:max-w-md 2xl:ml-40 2xl:mr-0"
-          >
-            View detailed profiles with certifications, parent reviews, and more
-          </p>
-        </div>
-
-        <div
-          class="flex mx-4 overflow-x-scroll whitespace-nowrap p-2 gap-4 lg:flex-1"
-          role="region"
-          aria-label="Babysitter profile examples"
-        >
-          <div
-            class="w-76 h-106 pt-8 pb-4 px-4 bg-white rounded-xl shadow-md"
-            aria-label="Babysitter: Jordan L., 10 years of experience, specializing in after-school care and child development. First aid/CPR certified."
-          >
-            <div class="flex mb-2">
-              <div class="w-31 h-31 rounded-full flex-1 overflow-hidden">
-                <img
-                  alt="Sample photo of sitter"
-                  class="object-cover object-center w-full h-full transform scale-150 translate-x-2 translate-y-2"
-                  src="assets/jordan.jpeg"
-                />
-              </div>
-              <div class="flex-1 pl-3">
-                <h3 class="font-medium text-m3 text-grey-header">Jordan L.</h3>
-                <div class="rating my-2">
-                  <span
-                    class="rating-group"
-                    stars="50"
-                    role="img"
-                    aria-label="Rating: 5 out of 5 stars. Total Reviews: 14"
-                  >
-                    <span
-                      class="rating__star rating__star--small"
-                      aria_hidden="true"
-                    ></span>
-                    <span
-                      class="rating__star rating__star--small"
-                      aria_hidden="true"
-                    ></span>
-                    <span
-                      class="rating__star rating__star--small"
-                      aria_hidden="true"
-                    ></span>
-                    <span
-                      class="rating__star rating__star--small"
-                      aria_hidden="true"
-                    ></span>
-                    <span
-                      class="rating__star rating__star--small"
-                      aria_hidden="true"
-                    ></span>
-                  </span>
-                  <p
-                    aria-hidden="true"
-                    class="rating__count xs-left-padding text-s"
-                  >
-                    (14)
-                  </p>
-                </div>
-                <ul aria-label="Trust and safety badges">
-                  <li class="inline-block">
-                    <img
-                      alt="Identity verification badge"
-                      width="40"
-                      height="40"
-                      src="https://cdn.sittercity.com/0abd1144e379e1d52015a2737ea763dc3569b0b5/packs/media/images/idv-badge-4b9a14fed6d3de3f9422f59d08d2afda.svg"
-                    />
-                  </li>
-
-                  <li class="inline-block">
-                    <img
-                      alt="Enhanced background check badge"
-                      width="40"
-                      height="40"
-                      src="https://cdn.sittercity.com/0abd1144e379e1d52015a2737ea763dc3569b0b5/packs/media/images/enhanced-bgc-badge-f1dcfbe79084e1f77e39f0a2a6b1ed24.svg"
-                    />
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="flex">
-              <img
-                alt="Heart icon"
-                width="24"
-                height="24"
-                src="https://cdn.sittercity.com/0abd1144e379e1d52015a2737ea763dc3569b0b5/packs/media/images/heart-outline-5d7a4deaa3cddcc9fa01a47502940a1e.svg"
-              />
-              <p class="ml-2 text-m text-grey-body">10 years experience</p>
-            </div>
-
-            <div class="flex my-4">
-              <img
-                alt="Map icon"
-                width="24"
-                height="24"
-                src="https://cdn.sittercity.com/0abd1144e379e1d52015a2737ea763dc3569b0b5/packs/media/images/map-icon-c7f552608bde1ab67058bfff1c31f0b5.svg"
-              />
-              <p class="ml-2 text-m text-grey-body">3 miles</p>
-            </div>
-
-            <div class="flex flex-wrap gap-2 mb-6">
-              <div
-                class="py-2 px-3 border border-solid rounded-3xl inline-block bg-grey-background-contrast border-grey-divider-subdued"
-              >
-                <p class="font-medium text-s text-grey-body">First Aid/CPR</p>
-              </div>
-
-              <div
-                class="py-2 px-3 border border-solid rounded-3xl inline-block bg-grey-background-contrast border-grey-divider-subdued"
-              >
-                <p class="font-medium text-s text-grey-body">After-school</p>
-              </div>
-
-              <div
-                class="py-2 px-3 border border-solid rounded-3xl inline-block bg-grey-background-contrast border-grey-divider-subdued"
-              >
-                <p class="font-medium text-s text-grey-body">
-                  Child development
-                </p>
-              </div>
-            </div>
-
-            <div class="flex">
-              <div class="flex-1">
-                <div class="flex mb-1">
-                  <img
-                    alt="Responds in"
-                    width="16"
-                    height="16"
-                    src="https://cdn.sittercity.com/0abd1144e379e1d52015a2737ea763dc3569b0b5/packs/media/images/respond-3c414d7dedf28e64a3c8d644e5fba53f.svg"
-                  />
-                  <p
-                    class="ml-2 text-xs tracking-wider font-medium uppercase text-grey-header"
-                  >
-                    Responds in
-                  </p>
-                </div>
-                <p class="text-m px-2 text-grey-header">30 minutes</p>
-              </div>
-              <hr class="mx-4 h-auto border" style="border-color: #d7d8d9" />
-              <div class="flex-1">
-                <div class="flex mb-1">
-                  <img
-                    alt="Last logged in"
-                    width="16"
-                    height="16"
-                    src="https://cdn.sittercity.com/0abd1144e379e1d52015a2737ea763dc3569b0b5/packs/media/images/login-b113ed339fc382b0b14a8673de7fd7bd.svg"
-                  />
-                  <p
-                    class="ml-2 text-xs tracking-wider font-medium uppercase text-grey-header"
-                  >
-                    Last login
-                  </p>
-                </div>
-                <p class="text-m px-2 text-grey-header">Online now</p>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="w-76 h-106 pt-8 pb-4 px-4 bg-white rounded-xl shadow-md"
-            aria-label="Babysitter: Julia L., 7 years of experience, specializing in weekends and last-minute care. First aid/CPR certified."
-          >
-            <div class="flex mb-2">
-              <div class="w-31 h-31 rounded-full flex-1 overflow-hidden">
-                <img
-                  alt="Sample photo of sitter"
-                  class="object-cover object-center w-full h-full transform scale-150 translate-y-4"
-                  src="assets/julia.jpeg"
-                />
-              </div>
-              <div class="flex-1 pl-3">
-                <h3 class="font-medium text-m3 text-grey-header">Julia L.</h3>
-                <div class="rating my-2">
-                  <span
-                    class="rating-group"
-                    stars="45"
-                    role="img"
-                    aria-label="Rating: 4.5 out of 5 stars. Total Reviews: 9"
-                  >
-                    <span
-                      class="rating__star rating__star--small"
-                      aria_hidden="true"
-                    ></span>
-                    <span
-                      class="rating__star rating__star--small"
-                      aria_hidden="true"
-                    ></span>
-                    <span
-                      class="rating__star rating__star--small"
-                      aria_hidden="true"
-                    ></span>
-                    <span
-                      class="rating__star rating__star--small"
-                      aria_hidden="true"
-                    ></span>
-                    <span
-                      class="rating__star rating__star--small"
-                      aria_hidden="true"
-                    ></span>
-                  </span>
-                  <p
-                    aria-hidden="true"
-                    class="rating__count xs-left-padding text-s"
-                  >
-                    (9)
-                  </p>
-                </div>
-                <ul aria-label="Trust and safety badges">
-                  <li class="inline-block">
-                    <img
-                      alt="Identity verification badge"
-                      width="40"
-                      height="40"
-                      src="https://cdn.sittercity.com/0abd1144e379e1d52015a2737ea763dc3569b0b5/packs/media/images/idv-badge-4b9a14fed6d3de3f9422f59d08d2afda.svg"
-                    />
-                  </li>
-
-                  <li class="inline-block">
-                    <img
-                      alt="Background check badge"
-                      width="40"
-                      height="40"
-                      src="https://cdn.sittercity.com/0abd1144e379e1d52015a2737ea763dc3569b0b5/packs/media/images/bgc-badge-898df8a800600b5586d3e2c12f1dbf53.svg"
-                    />
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="flex">
-              <img
-                alt="Heart icon"
-                width="24"
-                height="24"
-                src="https://cdn.sittercity.com/0abd1144e379e1d52015a2737ea763dc3569b0b5/packs/media/images/heart-outline-5d7a4deaa3cddcc9fa01a47502940a1e.svg"
-              />
-              <p class="ml-2 text-m text-grey-body">7 years experience</p>
-            </div>
-
-            <div class="flex my-4">
-              <img
-                alt="Map icon"
-                width="24"
-                height="24"
-                src="https://cdn.sittercity.com/0abd1144e379e1d52015a2737ea763dc3569b0b5/packs/media/images/map-icon-c7f552608bde1ab67058bfff1c31f0b5.svg"
-              />
-              <p class="ml-2 text-m text-grey-body">2 miles</p>
-            </div>
-
-            <div class="flex flex-wrap gap-2 mb-6">
-              <div
-                class="py-2 px-3 border border-solid rounded-3xl inline-block bg-grey-background-contrast border-grey-divider-subdued"
-              >
-                <p class="font-medium text-s text-grey-body">First Aid/CPR</p>
-              </div>
-
-              <div
-                class="py-2 px-3 border border-solid rounded-3xl inline-block bg-grey-background-contrast border-grey-divider-subdued"
-              >
-                <p class="font-medium text-s text-grey-body">Weekends</p>
-              </div>
-
-              <div
-                class="py-2 px-3 border border-solid rounded-3xl inline-block bg-grey-background-contrast border-grey-divider-subdued"
-              >
-                <p class="font-medium text-s text-grey-body">Last-minute</p>
-              </div>
-            </div>
-
-            <div class="flex">
-              <div class="flex-1">
-                <div class="flex mb-1">
-                  <img
-                    alt="Responds in"
-                    width="16"
-                    height="16"
-                    src="https://cdn.sittercity.com/0abd1144e379e1d52015a2737ea763dc3569b0b5/packs/media/images/respond-3c414d7dedf28e64a3c8d644e5fba53f.svg"
-                  />
-                  <p
-                    class="ml-2 text-xs tracking-wider font-medium uppercase text-grey-header"
-                  >
-                    Responds in
-                  </p>
-                </div>
-                <p class="text-m px-2 text-grey-header">1 hour</p>
-              </div>
-              <hr class="mx-4 h-auto border" style="border-color: #d7d8d9" />
-              <div class="flex-1">
-                <div class="flex mb-1">
-                  <img
-                    alt="Last logged in"
-                    width="16"
-                    height="16"
-                    src="https://cdn.sittercity.com/0abd1144e379e1d52015a2737ea763dc3569b0b5/packs/media/images/login-b113ed339fc382b0b14a8673de7fd7bd.svg"
-                  />
-                  <p
-                    class="ml-2 text-xs tracking-wider font-medium uppercase text-grey-header"
-                  >
-                    Last login
-                  </p>
-                </div>
-                <p class="text-m px-2 text-grey-header">Online now</p>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="w-76 h-106 pt-8 pb-4 px-4 bg-white rounded-xl shadow-md"
-            aria-label="Babysitter: Alexis T., 4 years of experience, bilingual and specializing in homework help. Early Ed. degree."
-          >
-            <div class="flex mb-2">
-              <div class="w-31 h-31 rounded-full flex-1 overflow-hidden">
-                <img
-                  alt="Sample photo of sitter"
-                  class="object-cover object-center w-full h-full transform scale-150 -translate-x-2 translate-y-2"
-                  src="assets/alex.jpeg"
-                />
-              </div>
-              <div class="flex-1 pl-3">
-                <h3 class="font-medium text-m3 text-grey-header">Alexis T.</h3>
-                <div class="rating my-2">
-                  <span
-                    class="rating-group"
-                    stars="50"
-                    role="img"
-                    aria-label="Rating: 5 out of 5 stars. Total Reviews: 7"
-                  >
-                    <span
-                      class="rating__star rating__star--small"
-                      aria_hidden="true"
-                    ></span>
-                    <span
-                      class="rating__star rating__star--small"
-                      aria_hidden="true"
-                    ></span>
-                    <span
-                      class="rating__star rating__star--small"
-                      aria_hidden="true"
-                    ></span>
-                    <span
-                      class="rating__star rating__star--small"
-                      aria_hidden="true"
-                    ></span>
-                    <span
-                      class="rating__star rating__star--small"
-                      aria_hidden="true"
-                    ></span>
-                  </span>
-                  <p
-                    aria-hidden="true"
-                    class="rating__count xs-left-padding text-s"
-                  >
-                    (7)
-                  </p>
-                </div>
-                <ul aria-label="Trust and safety badges">
-                  <li class="inline-block">
-                    <img
-                      alt="Identity verification badge"
-                      width="40"
-                      height="40"
-                      src="https://cdn.sittercity.com/0abd1144e379e1d52015a2737ea763dc3569b0b5/packs/media/images/idv-badge-4b9a14fed6d3de3f9422f59d08d2afda.svg"
-                    />
-                  </li>
-
-                  <li class="inline-block">
-                    <img
-                      alt="Enhanced background check badge"
-                      width="40"
-                      height="40"
-                      src="https://cdn.sittercity.com/0abd1144e379e1d52015a2737ea763dc3569b0b5/packs/media/images/enhanced-bgc-badge-f1dcfbe79084e1f77e39f0a2a6b1ed24.svg"
-                    />
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="flex">
-              <img
-                alt="Heart icon"
-                width="24"
-                height="24"
-                src="https://cdn.sittercity.com/0abd1144e379e1d52015a2737ea763dc3569b0b5/packs/media/images/heart-outline-5d7a4deaa3cddcc9fa01a47502940a1e.svg"
-              />
-              <p class="ml-2 text-m text-grey-body">4 years experience</p>
-            </div>
-
-            <div class="flex my-4">
-              <img
-                alt="Map icon"
-                width="24"
-                height="24"
-                src="https://cdn.sittercity.com/0abd1144e379e1d52015a2737ea763dc3569b0b5/packs/media/images/map-icon-c7f552608bde1ab67058bfff1c31f0b5.svg"
-              />
-              <p class="ml-2 text-m text-grey-body">5 miles</p>
-            </div>
-
-            <div class="flex flex-wrap gap-2 mb-6">
-              <div
-                class="py-2 px-3 border border-solid rounded-3xl inline-block bg-grey-background-contrast border-grey-divider-subdued"
-              >
-                <p class="font-medium text-s text-grey-body">
-                  Early Ed. degree
-                </p>
-              </div>
-
-              <div
-                class="py-2 px-3 border border-solid rounded-3xl inline-block bg-grey-background-contrast border-grey-divider-subdued"
-              >
-                <p class="font-medium text-s text-grey-body">Bilingual</p>
-              </div>
-
-              <div
-                class="py-2 px-3 border border-solid rounded-3xl inline-block bg-grey-background-contrast border-grey-divider-subdued"
-              >
-                <p class="font-medium text-s text-grey-body">Homework help</p>
-              </div>
-            </div>
-
-            <div class="flex">
-              <div class="flex-1">
-                <div class="flex mb-1">
-                  <img
-                    alt="Responds in"
-                    width="16"
-                    height="16"
-                    src="https://cdn.sittercity.com/0abd1144e379e1d52015a2737ea763dc3569b0b5/packs/media/images/respond-3c414d7dedf28e64a3c8d644e5fba53f.svg"
-                  />
-                  <p
-                    class="ml-2 text-xs tracking-wider font-medium uppercase text-grey-header"
-                  >
-                    Responds in
-                  </p>
-                </div>
-                <p class="text-m px-2 text-grey-header">1 hour</p>
-              </div>
-              <hr class="mx-4 h-auto border" style="border-color: #d7d8d9" />
-              <div class="flex-1">
-                <div class="flex mb-1">
-                  <img
-                    alt="Last logged in"
-                    width="16"
-                    height="16"
-                    src="https://cdn.sittercity.com/0abd1144e379e1d52015a2737ea763dc3569b0b5/packs/media/images/login-b113ed339fc382b0b14a8673de7fd7bd.svg"
-                  />
-                  <p
-                    class="ml-2 text-xs tracking-wider font-medium uppercase text-grey-header"
-                  >
-                    Last login
-                  </p>
-                </div>
-                <p class="text-m px-2 text-grey-header">Online now</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-
-      <section>
-        <div class="flex flex-wrap p-2">
-          <div class="flex justify-center w-1/2 md:w-1/4 p-2">
-            <a
-              class="block bg-white rounded-2xl shadow-md h-full max-w-xxs p-4"
-              tab_index="0"
-            >
-              <img
-                class="mx-auto w-12 md:w-20"
-                alt=""
-                width="79"
-                height="82"
-                src="https://cdn.sittercity.com/0abd1144e379e1d52015a2737ea763dc3569b0b5/packs/media/images/illustrations/babysitter-e0206dac15ec96c7df812caf90f85ca4.svg"
-              />
-              <h3 class="font-regular text-m1 text-grey-header mb-2 my-4">
-                Babysitter
-              </h3>
-              <p class="care-type-body my-4 text-body">
-                Occasional, Last-minute, date night, and vacations
-              </p>
-            </a>
-          </div>
-
-          <div class="flex justify-center w-1/2 md:w-1/4 p-2">
-            <a
-              class="block bg-white rounded-2xl shadow-md h-full max-w-xxs p-4"
-              tab_index="0"
-            >
-              <img
-                class="mx-auto w-12 md:w-20"
-                alt=""
-                width="76"
-                height="80"
                 src="https://cdn.sittercity.com/0abd1144e379e1d52015a2737ea763dc3569b0b5/packs/media/images/illustrations/nanny-93a5cdf4884a626157e1569f300f36f1.svg"
+                alt="Nanny Icon"
+                class="card-img"
               />
-              <h3 class="font-regular text-m1 text-grey-header mb-2 my-4">
-                Nanny
-              </h3>
-              <p class="care-type-body my-4 text-body">
-                Regular, after-school, weekdays, weekends
-              </p>
+              <h3 class="card-title">Nanny</h3>
+              <p class="card-text">Regular, after-school, weekdays, weekends</p>
             </a>
           </div>
 
-          <div class="flex justify-center w-1/2 md:w-1/4 p-2">
-            <a
-              class="block bg-white rounded-2xl shadow-md h-full max-w-xxs p-4"
-              tab_index="0"
-            >
+          <div class="card">
+            <a class="card-box" href="#">
               <img
-                class="mx-auto w-12 md:w-20"
-                alt=""
-                width="82"
-                height="82"
-                src="https://cdn.sittercity.com/0abd1144e379e1d52015a2737ea763dc3569b0b5/packs/media/images/illustrations/petSitting-48227e834889f9dd935239d208459aeb.svg"
-              />
-              <h3 class="font-regular text-m1 text-grey-header mb-2 my-4">
-                Pet
-              </h3>
-              <p class="care-type-body my-4 text-body">
-                Feeding, walks, sitting, and regular care
-              </p>
-            </a>
-          </div>
-
-          <div class="flex justify-center w-1/2 md:w-1/4 p-2">
-            <a
-              class="block bg-white rounded-2xl shadow-md h-full max-w-xxs p-4"
-              tab_index="0"
-            >
-              <img
-                class="mx-auto w-12 md:w-20"
-                alt=""
-                width="86"
-                height="73"
                 src="https://cdn.sittercity.com/0abd1144e379e1d52015a2737ea763dc3569b0b5/packs/media/images/illustrations/seniorCare-98e4ad1cc961c564df925c1cfb0a22fa.svg"
+                alt="Tutor Icon"
+                class="card-img"
               />
-              <h3 class="font-regular text-m1 text-grey-header mb-2 my-4">
-                Companion
-              </h3>
-              <p class="care-type-body my-4 text-body">
-                In-home help with everyday activities and tasks
+              <h3 class="card-title">Tutor</h3>
+              <p class="card-text">
+                Personalized, in-home educational support to help with studies
+                and learning goals
               </p>
             </a>
           </div>
@@ -994,7 +413,7 @@
               alt="Babysitter greeting a child at the door, both smiling"
               width="575"
               height="662"
-              src="assets/baby_sitter.png"
+              src="assets/img 01.png"
             />
           </picture>
 
@@ -1011,7 +430,6 @@
       <div
         class="relative md:px-6 sm:px-6 mt-12 mb-14 md:my-18 lg:mt-32 lg:mb-30"
       >
-        <!-- Sun image positioned above on mobile only -->
         <div class="block sm:hidden mb-0 text-left pl-4">
           <img
             src="https://cdn.sittercity.com/0abd1144e379e1d52015a2737ea763dc3569b0b5/packs/media/images/bh-sun-b54eaa72739165c3b4b6f845d1c396d3.svg"
@@ -1044,8 +462,6 @@
               </span>
             </div>
           </div>
-
-          <!-- Sun image for tablet and desktop views - positioned to match the design -->
           <img
             src="https://cdn.sittercity.com/0abd1144e379e1d52015a2737ea763dc3569b0b5/packs/media/images/bh-sun-b54eaa72739165c3b4b6f845d1c396d3.svg"
             alt="BH icon: sun image for tablet and desktop views"
@@ -1141,292 +557,17 @@
           </div>
         </div>
 
-        <!-- Trust and Safety Image - Desktop Only -->
         <div
           class="hidden lg:block absolute"
-          style="left: 450px; bottom: 100px"
+          style="left: 600px; bottom: 100px"
         >
           <img
             alt="Babysitter holding a baby, both smiling while sitting on a mat with toys"
             class="w-full max-h-540 object-contain"
             width="1102"
             height="734"
-            src="assets/trust-and-safety-img.png"
+            src="assets/img 02-Photoroom.png"
           />
-
-          <div class="absolute w-full" style="left: 50%; bottom: 30%">
-            <!-- <section
-              class="flex flex-row overflow-x-scroll mt-8 pb-4 lg:pr-64 xl:pr-0"
-            >
-              <div
-                class="flex flex-col justify-between flex-shrink-0 bg-white rounded-xl shadow-md w-272 h-208 md:h-260 ml-6 px-6 py-4"
-              >
-                <div>
-                  <img
-                    alt="Pink Quote"
-                    width="24"
-                    height="19"
-                    src="https://cdn.sittercity.com/0abd1144e379e1d52015a2737ea763dc3569b0b5/packs/media/images/pink-left-quote-ae4475ed36fbcc150493deb78135c975.svg"
-                  />
-                  <p
-                    class="justify-start text-m lg:text-m1 text-grey-body font-light leading-7 tracking-tight mt-4"
-                  >
-                    It’s easy and I always find a sitter!
-                  </p>
-                </div>
-                <div>
-                  <h3 class="font-medium text-l text-pink-accent">
-                    Jennifer R.
-                  </h3>
-                  <p
-                    class="justify-start text-xs text-grey-header font-light leading-none tracking-wide"
-                  >
-                    Nanny Homes member since 2022
-                  </p>
-                </div>
-              </div>
-              <div
-                class="flex flex-col justify-between flex-shrink-0 bg-white rounded-xl shadow-md w-272 h-208 md:h-260 ml-4 px-6 py-4"
-              >
-                <div>
-                  <img
-                    alt="Pink Quote"
-                    width="24"
-                    height="19"
-                    src="https://cdn.sittercity.com/0abd1144e379e1d52015a2737ea763dc3569b0b5/packs/media/images/pink-left-quote-ae4475ed36fbcc150493deb78135c975.svg"
-                  />
-                  <p
-                    class="justify-start text-m lg:text-m1 text-grey-body font-light leading-7 tracking-tight mt-4"
-                  >
-                    Nanny Homes is efficient, trustworthy, and has helped me in a
-                    bind many times.
-                  </p>
-                </div>
-                <div>
-                  <h3 class="font-medium text-l text-pink-accent">Annika D.</h3>
-                  <p
-                    class="justify-start text-xs text-grey-header font-light leading-none tracking-wide"
-                  >
-                    Nanny Homes member since 2014
-                  </p>
-                </div>
-              </div>
-              <div
-                class="flex flex-col justify-between flex-shrink-0 bg-white rounded-xl shadow-md w-272 h-208 md:h-260 ml-4 px-6 py-4"
-              >
-                <div>
-                  <img
-                    alt="Pink Quote"
-                    width="24"
-                    height="19"
-                    src="https://cdn.sittercity.com/0abd1144e379e1d52015a2737ea763dc3569b0b5/packs/media/images/pink-left-quote-ae4475ed36fbcc150493deb78135c975.svg"
-                  />
-                  <div
-                    class="justify-start text-m lg:text-m1 text-grey-body font-light leading-7 tracking-tight mt-4"
-                  >
-                    Great site, easy to use, and great community.
-                  </div>
-                </div>
-                <div>
-                  <h3 class="font-medium text-l text-pink-accent">Lorin M.</h3>
-                  <div
-                    class="justify-start text-xs text-grey-header font-light leading-none tracking-wide"
-                  >
-                    Nanny Homes member since 2024
-                  </div>
-                </div>
-              </div>
-              <div
-                class="flex flex-col justify-between flex-shrink-0 bg-white rounded-xl shadow-md w-272 h-208 md:h-260 ml-4 px-6 py-4"
-              >
-                <div>
-                  <img
-                    alt="Pink Quote"
-                    width="24"
-                    height="19"
-                    src="https://cdn.sittercity.com/0abd1144e379e1d52015a2737ea763dc3569b0b5/packs/media/images/pink-left-quote-ae4475ed36fbcc150493deb78135c975.svg"
-                  />
-                  <div
-                    class="justify-start text-m lg:text-m1 text-grey-body font-light leading-7 tracking-tight mt-4"
-                  >
-                    Nanny Homes is leaps and bounds above Care.com
-                  </div>
-                </div>
-                <div>
-                  <h3 class="font-medium text-l text-pink-accent">Cindy A.</h3>
-                  <div
-                    class="justify-start text-xs text-grey-header font-light leading-none tracking-wide"
-                  >
-                    Nanny Homes member since 2019
-                  </div>
-                </div>
-              </div>
-              <div
-                class="flex flex-col justify-between flex-shrink-0 bg-white rounded-xl shadow-md w-272 h-208 md:h-260 ml-4 px-6 py-4"
-              >
-                <div>
-                  <img
-                    alt="Pink Quote"
-                    width="24"
-                    height="19"
-                    src="https://cdn.sittercity.com/0abd1144e379e1d52015a2737ea763dc3569b0b5/packs/media/images/pink-left-quote-ae4475ed36fbcc150493deb78135c975.svg"
-                  />
-                  <div
-                    class="justify-start text-m lg:text-m1 text-grey-body font-light leading-7 tracking-tight mt-4"
-                  >
-                    Fast responses, lots of well qualified sitters in my area.
-                  </div>
-                </div>
-                <div>
-                  <h3 class="font-medium text-l text-pink-accent">
-                    Alexandra M.
-                  </h3>
-                  <div
-                    class="justify-start text-xs text-grey-header font-light leading-none tracking-wide"
-                  >
-                    Nanny Homes member since 2024
-                  </div>
-                </div>
-              </div>
-              <div class="flex-shrink-0 w-10 lg:w-60 xl:w-100 2xl:w-0"></div>
-            </section> -->
-          </div>
-        </div>
-
-        <div class="lg:hidden">
-          <section
-            class="flex flex-row overflow-x-scroll mt-8 pb-4 lg:pr-64 xl:pr-0"
-          >
-            <div
-              class="flex flex-col justify-between flex-shrink-0 bg-white rounded-xl shadow-md w-272 h-208 md:h-260 ml-6 px-6 py-4"
-            >
-              <div>
-                <img
-                  alt="Pink Quote"
-                  width="24"
-                  height="19"
-                  src="https://cdn.sittercity.com/0abd1144e379e1d52015a2737ea763dc3569b0b5/packs/media/images/pink-left-quote-ae4475ed36fbcc150493deb78135c975.svg"
-                />
-                <p
-                  class="justify-start text-m lg:text-m1 text-grey-body font-light leading-7 tracking-tight mt-4"
-                >
-                  It’s easy and I always find a sitter!
-                </p>
-              </div>
-              <div>
-                <h3 class="font-medium text-l text-pink-accent">Jennifer R.</h3>
-                <p
-                  class="justify-start text-xs text-grey-header font-light leading-none tracking-wide"
-                >
-                  Nanny Homes member since 2022
-                </p>
-              </div>
-            </div>
-            <div
-              class="flex flex-col justify-between flex-shrink-0 bg-white rounded-xl shadow-md w-272 h-208 md:h-260 ml-4 px-6 py-4"
-            >
-              <div>
-                <img
-                  alt="Pink Quote"
-                  width="24"
-                  height="19"
-                  src="https://cdn.sittercity.com/0abd1144e379e1d52015a2737ea763dc3569b0b5/packs/media/images/pink-left-quote-ae4475ed36fbcc150493deb78135c975.svg"
-                />
-                <p
-                  class="justify-start text-m lg:text-m1 text-grey-body font-light leading-7 tracking-tight mt-4"
-                >
-                  Nanny Homes is efficient, trustworthy, and has helped me in a
-                  bind many times.
-                </p>
-              </div>
-              <div>
-                <h3 class="font-medium text-l text-pink-accent">Annika D.</h3>
-                <p
-                  class="justify-start text-xs text-grey-header font-light leading-none tracking-wide"
-                >
-                  Nanny Homes member since 2014
-                </p>
-              </div>
-            </div>
-            <div
-              class="flex flex-col justify-between flex-shrink-0 bg-white rounded-xl shadow-md w-272 h-208 md:h-260 ml-4 px-6 py-4"
-            >
-              <div>
-                <img
-                  alt="Pink Quote"
-                  width="24"
-                  height="19"
-                  src="https://cdn.sittercity.com/0abd1144e379e1d52015a2737ea763dc3569b0b5/packs/media/images/pink-left-quote-ae4475ed36fbcc150493deb78135c975.svg"
-                />
-                <div
-                  class="justify-start text-m lg:text-m1 text-grey-body font-light leading-7 tracking-tight mt-4"
-                >
-                  Great site, easy to use, and great community.
-                </div>
-              </div>
-              <div>
-                <h3 class="font-medium text-l text-pink-accent">Lorin M.</h3>
-                <div
-                  class="justify-start text-xs text-grey-header font-light leading-none tracking-wide"
-                >
-                  Nanny Homes member since 2024
-                </div>
-              </div>
-            </div>
-            <div
-              class="flex flex-col justify-between flex-shrink-0 bg-white rounded-xl shadow-md w-272 h-208 md:h-260 ml-4 px-6 py-4"
-            >
-              <div>
-                <img
-                  alt="Pink Quote"
-                  width="24"
-                  height="19"
-                  src="https://cdn.sittercity.com/0abd1144e379e1d52015a2737ea763dc3569b0b5/packs/media/images/pink-left-quote-ae4475ed36fbcc150493deb78135c975.svg"
-                />
-                <div
-                  class="justify-start text-m lg:text-m1 text-grey-body font-light leading-7 tracking-tight mt-4"
-                >
-                  Nanny Homes is leaps and bounds above Care.com
-                </div>
-              </div>
-              <div>
-                <h3 class="font-medium text-l text-pink-accent">Cindy A.</h3>
-                <div
-                  class="justify-start text-xs text-grey-header font-light leading-none tracking-wide"
-                >
-                  Nanny Homes member since 2019
-                </div>
-              </div>
-            </div>
-            <div
-              class="flex flex-col justify-between flex-shrink-0 bg-white rounded-xl shadow-md w-272 h-208 md:h-260 ml-4 px-6 py-4"
-            >
-              <div>
-                <img
-                  alt="Pink Quote"
-                  width="24"
-                  height="19"
-                  src="https://cdn.sittercity.com/0abd1144e379e1d52015a2737ea763dc3569b0b5/packs/media/images/pink-left-quote-ae4475ed36fbcc150493deb78135c975.svg"
-                />
-                <div
-                  class="justify-start text-m lg:text-m1 text-grey-body font-light leading-7 tracking-tight mt-4"
-                >
-                  Fast responses, lots of well qualified sitters in my area.
-                </div>
-              </div>
-              <div>
-                <h3 class="font-medium text-l text-pink-accent">
-                  Alexandra M.
-                </h3>
-                <div
-                  class="justify-start text-xs text-grey-header font-light leading-none tracking-wide"
-                >
-                  Nanny Homes member since 2024
-                </div>
-              </div>
-            </div>
-            <div class="flex-shrink-0 w-10 lg:w-60 xl:w-100 2xl:w-0"></div>
-          </section>
         </div>
       </section>
 
@@ -1444,12 +585,6 @@
           </h1>
 
           <picture class="lg:w-1/2 md:mt-18 lg:mt-0 lg:mr-20">
-            <source
-              media="(max-width: 767px)"
-              srcset="
-                //images.ctfassets.net/wmwzystk5o45/2Sae96piRe5lB9DMt3hErR/9d9ac51e9b0489c2b270177c04a0b3da/210225_SITTERCITY__08_SHOT_8_1691__2__2.png
-              "
-            />
             <img
               alt="Babysitter sitting on a bench with two children, all smiling"
               class="lg:max-w-none w-full md:w-auto lg:w-full"
@@ -1478,17 +613,13 @@
     </main>
     <footer class="footer">
       <div class="footer-container">
-        <!-- Top Links Row -->
         <div class="footer-top-links">
           <a href="about-us.html" class="footer-link">About us</a>
           <a class="footer-link">Careers</a>
           <a class="footer-link">Blog</a>
           <a class="footer-link">Press</a>
         </div>
-
-        <!-- Main Content Columns -->
         <div class="footer-columns">
-          <!-- Resources Column -->
           <div class="footer-column">
             <h3 class="footer-column-title">Resources</h3>
             <ul class="footer-link-list">
@@ -1509,55 +640,26 @@
               </li>
             </ul>
           </div>
-
-          <!-- Care Services Column -->
           <div class="footer-column">
-            <h3 class="footer-column-title">Find Child, Pet, & Senior Care</h3>
+            <h3 class="footer-column-title">Find Child Care</h3>
             <ul class="footer-link-list">
-              <li>
-                <a class="footer-link">Babysitters</a>
-              </li>
               <li><a class="footer-link">Nannies</a></li>
-              <li>
-                <a class="footer-link">Child Care</a>
-              </li>
-              <li>
-                <a class="footer-link">Special Needs Care</a>
-              </li>
-              <li>
-                <a class="footer-link">Senior Care</a>
-              </li>
-              <li><a class="footer-link">Pet Care</a></li>
+              <li><a class="footer-link">Tutors</a></li>
             </ul>
           </div>
-
-          <!-- Jobs Column -->
           <div class="footer-column">
             <h3 class="footer-column-title">Find Jobs</h3>
             <ul class="footer-link-list">
               <li>
-                <a class="footer-link">Babysitting Jobs</a>
-              </li>
-              <li>
                 <a class="footer-link">Nannying Jobs</a>
               </li>
               <li>
-                <a class="footer-link">Child Care Jobs</a>
-              </li>
-              <li>
-                <a class="footer-link">Special Needs Care Jobs</a>
-              </li>
-              <li>
-                <a class="footer-link">Senior Care Jobs</a>
-              </li>
-              <li>
-                <a class="footer-link">Pet Sitting Jobs</a>
+                <a class="footer-link">Tutoring Jobs</a>
               </li>
             </ul>
           </div>
         </div>
 
-        <!-- Copyright and Legal -->
         <div class="footer-legal">
           <p class="copyright">
             © 2025 Nanny Homes Incorporated. All Rights Reserved.
