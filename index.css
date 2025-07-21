@@ -3359,14 +3359,12 @@ main {
 
 .footer-columns {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 30px;
+  justify-content: center;
+  gap: 120px;
   margin-bottom: 40px;
 }
 
 .footer-column {
-  flex: 1;
   min-width: 200px;
 }
 
