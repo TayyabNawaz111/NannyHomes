@@ -107,42 +107,7 @@
     </noscript>
     <header class="header header--mobile">
       <div class="header-mobile__wrapper">
-        <input type="checkbox" id="header__checkbox" class="header__checkbox" />
-        <label for="header__checkbox" class="header__checkbox--open">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="14"
-            viewBox="0 0 24 24"
-          >
-            <g fill="#FF0064" fill-rule="evenodd">
-              <path d="M0 2h24v2H0zM0 20h24v2H0zM0 11h24v2H0z"></path>
-            </g>
-          </svg>
-        </label>
-        <label for="header__checkbox" class="header__checkbox--close">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            viewBox="0 0 24 24"
-          >
-            <g fill="none" fill-rule="evenodd">
-              <path fill="none" d="M0 11h24v2H0z"></path>
-              <path
-                class="icon-line"
-                fill="#FF0064"
-                d="M2.55.768l21.213 21.213-1.414 1.415L1.136 2.182z"
-              ></path>
-              <path
-                class="icon-line"
-                fill="#FF0064"
-                d="M.686 21.9L21.9.685l1.415 1.415L2.1 23.314z"
-              ></path>
-            </g>
-          </svg>
-        </label>
-        <a aria-label="Nanny Homes" class="nav-logo__container" href="#">
+        <a aria-label="Nanny Homes" class="nav-logo__container" >
           <img
             src="assets/logo.png"
             alt="Nanny Homes Logo"
@@ -152,17 +117,20 @@
         <nav class="nav-navigation" role="navigation">
           <ul class="nav-navigation__list">
             <li class="nav-navigation__item">
-              <a rel="external" class="nav-navigation__link" href="index.html"
+              <a
+                rel="external"
+                class="nav-navigation__link"
+                href="index.html"
                 >Home</a
               >
             </li>
-            <li class="nav-navigation__item">
+            <li class="nav-navigation__item" style="margin-right: 4px;">
               <a class="nav-primary-button nav-outline-button">Find a nanny</a>
             </li>
             <li class="nav-navigation__item">
-              <button class="login-dropdown-button nav-primary-button">
+              <a class="login-dropdown-button nav-primary-button">
                 Find a job
-              </button>
+              </a>
             </li>
           </ul>
         </nav>
@@ -361,7 +329,7 @@
       <footer class="footer">
       <div class="footer-container">
         <div class="footer-top-links">
-          <a href="about-us.html" class="footer-link">About us</a>
+          <a href="index.html" class="footer-link">Home</a>
           <a class="footer-link">Careers</a>
           <a class="footer-link">Blog</a>
           <a class="footer-link">Press</a>
