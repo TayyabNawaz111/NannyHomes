@@ -564,7 +564,7 @@ main {
 .button--regular {
   padding: 0.9375rem;
 }
-.getStartedBtn:hover{
+.getStartedBtn:hover {
   background-color: blue !important;
   color: #fff !important;
 }
@@ -3500,5 +3500,112 @@ main {
 
   .card-box {
     padding: 1.5rem;
+  }
+}
+.comparison-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  background-color: #ffede3;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #dd457d;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.comparison-table-container {
+  overflow-x: auto;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #ffc0cb;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 16px 24px;
+  text-align: left;
+}
+
+.table-header {
+  background-color: #ffebee;
+  border-bottom: 2px solid #ff91a4;
+}
+
+.table-header th {
+  font-weight: 600;
+  color: #d81b60;
+}
+
+.feature-name {
+  font-weight: 500;
+  color: #d81b60;
+}
+
+.alternate-row {
+  background-color: #fff9fa;
+}
+
+.comparison-table tr {
+  border-bottom: 1px solid #ffc0cb;
+}
+
+.comparison-table tr:last-child {
+  border-bottom: none;
+}
+
+.cta-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 12px;
+  border: 1px solid #ffc0cb;
+}
+
+.cta-text {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 0;
+  padding-right: 20px;
+}
+
+.book-now-button {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #d81b60;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.book-now-button:hover {
+  background-color: #b71550;
+}
+
+@media (max-width: 768px) {
+  .cta-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-text {
+    padding-right: 0;
+    margin-bottom: 15px;
   }
 }
