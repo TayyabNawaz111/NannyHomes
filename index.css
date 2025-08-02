@@ -564,7 +564,10 @@ main {
 .button--regular {
   padding: 0.9375rem;
 }
-
+.getStartedBtn:hover{
+  background-color: blue !important;
+  color: #fff !important;
+}
 .header {
   background: #fff;
   height: 3rem;
