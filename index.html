@@ -71,18 +71,24 @@
               class="nav-navigation__item"
               style="width: 68px; margin-right: 5px"
             >
-              <a
-                rel="external"
-                class="nav-navigation__link"
-                href="about-us.html"
-                >About us</a
+              <a rel="external" class="nav-navigation__link" href="index.html"
+                >Home</a
               >
             </li>
             <li class="nav-navigation__item" style="margin-right: 4px">
-              <a class="nav-primary-button nav-outline-button">Find a nanny</a>
+              <a
+                target="_blank"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdNP8Rijk-23G29RNEh3hNVykRTKm1yH0IdRmsMXYgcqm3YHw/viewform?usp=header"
+                class="nav-primary-button nav-outline-button"
+                >Find a nanny</a
+              >
             </li>
             <li class="nav-navigation__item">
-              <a class="login-dropdown-button nav-primary-button">
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLScwV8_0p6iPOWvXiPikCzJd69Rpak7beAmrjAkNtTGxq-UruQ/viewform?usp=header"
+                target="_blank"
+                class="login-dropdown-button nav-primary-button"
+              >
                 Find a job
               </a>
             </li>
@@ -135,15 +141,23 @@
       <nav class="nav-navigation" role="navigation">
         <ul class="nav-navigation__list">
           <li class="nav-navigation__item">
-            <a rel="external" class="nav-navigation__link" href="about-us.html"
-              >About us</a
+            <a rel="external" class="nav-navigation__link" href="index.html"
+              >Home</a
             >
           </li>
           <li class="nav-navigation__item">
-            <a class="nav-primary-button nav-outline-button">Find a nanny</a>
+            <a
+              target="_blank"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdNP8Rijk-23G29RNEh3hNVykRTKm1yH0IdRmsMXYgcqm3YHw/viewform?usp=header"
+              class="nav-primary-button nav-outline-button"
+              >Find a nanny</a
+            >
           </li>
           <li class="nav-navigation__item">
-            <button class="login-dropdown-button nav-primary-button">
+            <button
+              class="login-dropdown-button nav-primary-button"
+              onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScwV8_0p6iPOWvXiPikCzJd69Rpak7beAmrjAkNtTGxq-UruQ/viewform?usp=header', '_blank')"
+            >
               Find a job
             </button>
           </li>
@@ -241,7 +255,10 @@
             </div>
 
             <div class="flex justify-center items-center w-full">
-              <a class="button btn-primary btn-medium lg:w-1/2 text-center"
+              <a
+                class="button btn-primary btn-medium lg:w-1/2 text-center"
+                target="_blank"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdNP8Rijk-23G29RNEh3hNVykRTKm1yH0IdRmsMXYgcqm3YHw/viewform?usp=header"
                 >Book Now</a
               >
             </div>
@@ -338,6 +355,8 @@
           <a
             class="button btn-primary btn-medium text-center"
             style="width: 25%"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdNP8Rijk-23G29RNEh3hNVykRTKm1yH0IdRmsMXYgcqm3YHw/viewform?usp=header"
+            target="_blank"
             >Book now</a
           >
         </div>
@@ -420,6 +439,8 @@
             class="mt-4 lg:mt-0 md:ml-8 col-span-2 md:col-span-1 lg:col-start-3 lg:col-span-3 lg:ml-32 lg:py-6 xl:ml-48"
           >
             <a
+              target="_blank"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdNP8Rijk-23G29RNEh3hNVykRTKm1yH0IdRmsMXYgcqm3YHw/viewform?usp=header"
               class="button button--regular font-semibold w-full md:w-auto getStartedBtn"
               style="background-color: rgb(81, 86, 184); color: white"
               >Get started</a
@@ -575,7 +596,10 @@
               Find the care you need from someone you trust
             </h1>
             <div class="flex justify-center items-center w-full min-h-[50px]">
-              <a class="button btn-primary mt-2 btn-medium lg:w-1/2 text-center"
+              <a
+                class="button btn-primary mt-2 btn-medium lg:w-1/2 text-center"
+                target="_blank"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdNP8Rijk-23G29RNEh3hNVykRTKm1yH0IdRmsMXYgcqm3YHw/viewform?usp=header"
                 >Book now</a
               >
             </div>
@@ -586,20 +610,40 @@
     <footer class="footer">
       <div class="footer-columns">
         <div class="footer-column">
-          <h3 class="footer-column-title">Find Child Care</h3>
+          <h3 class="footer-column-title">Find Care</h3>
           <ul class="footer-link-list">
-            <li><a class="footer-link">Nannies</a></li>
-            <li><a class="footer-link">Tutors</a></li>
+            <li><a class="footer-link" href="nannies.html">Nannies</a></li>
+            <li><a class="footer-link" href="tutors.html">Tutors</a></li>
           </ul>
         </div>
+
         <div class="footer-column">
           <h3 class="footer-column-title">Find Jobs</h3>
           <ul class="footer-link-list">
             <li>
-              <a class="footer-link">Nannying Jobs</a>
+              <a class="footer-link" href="nannies-job.html">Nanny Jobs</a>
             </li>
             <li>
-              <a class="footer-link">Tutoring Jobs</a>
+              <a class="footer-link" href="tutors-job.html">Tutor Jobs</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3 class="footer-column-title">Legal</h3>
+          <ul class="footer-link-list">
+            <li>
+              <a class="footer-link" href="privacy-policy.html"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a class="footer-link" href="term-of-use.html">Terms of Use</a>
+            </li>
+            <li>
+              <a class="footer-link" href="personal-info.html"
+                >Do Not Sell My Personal Information</a
+              >
             </li>
           </ul>
         </div>
@@ -609,16 +653,12 @@
         <p class="copyright">
           © 2025 Nanny Homes Incorporated. All Rights Reserved.
         </p>
-        <p class="legal-links">
-          By using this site you agree to the
-          <a class="legal-link">Terms of Use</a>, See our
-          <a class="legal-link">Privacy Policy</a>. Make updates to
-          <a class="legal-link">Do Not Sell My Personal Information</a>.
-        </p>
         <p class="accessibility">
           If you are having difficulty using assistive technology with this
           website, please contact Nanny Homes Member Services by email at
-          <a class="email-link">support@nannyhomes.com</a>.
+          <a class="email-link" href="mailto:support@nannyhomes.com"
+            >support@nannyhomes.com</a
+          >.
         </p>
       </div>
     </footer>
