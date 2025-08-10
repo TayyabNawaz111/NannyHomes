@@ -62,66 +62,36 @@
           <img
             src="assets/logo.png"
             alt="Nanny Homes Logo"
-            style="height: 50px"
+            style="height: 110px"
           />
         </a>
-        <nav class="nav-navigation" role="navigation">
-          <ul class="nav-navigation__list">
-            <li
-              class="nav-navigation__item"
-              style="width: 68px; margin-right: 5px"
+
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <nav class="mobile-menu" id="mobileMenu">
+        <ul>
+          <li><a href="about-us.html">About us</a></li>
+          <li>
+            <a
+              target="_blank"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdNP8Rijk-23G29RNEh3hNVykRTKm1yH0IdRmsMXYgcqm3YHw/viewform?usp=header"
+              >Find a nanny</a
             >
-              <a rel="external" class="nav-navigation__link" href="index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-navigation__item" style="margin-right: 4px">
-              <a
-                target="_blank"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdNP8Rijk-23G29RNEh3hNVykRTKm1yH0IdRmsMXYgcqm3YHw/viewform?usp=header"
-                class="nav-primary-button nav-outline-button"
-                >Find a nanny</a
-              >
-            </li>
-            <li class="nav-navigation__item">
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLScwV8_0p6iPOWvXiPikCzJd69Rpak7beAmrjAkNtTGxq-UruQ/viewform?usp=header"
-                target="_blank"
-                class="login-dropdown-button nav-primary-button"
-              >
-                Find a job
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="login-dropdown" aria-hidden="true" style="display: none">
-          <li>
-            <h3 class="login-dropdown-title">I'm a...</h3>
           </li>
           <li>
-            <a class="nav-primary-button nav-outline-button">Parent</a>
-          </li>
-          <li>
-            <a class="nav-primary-button nav-outline-button">Sitter</a>
+            <a
+              target="_blank"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScwV8_0p6iPOWvXiPikCzJd69Rpak7beAmrjAkNtTGxq-UruQ/viewform?usp=header"
+              >Find a job</a
+            >
           </li>
         </ul>
-
-        <div class="header__content">
-          <nav class="nav-navigation container row" role="navigation">
-            <div class="nav-navigation__wrapper col-xs-offset-1 col-xs-10">
-              <ul class="nav-navigation__list">
-                <li class="nav-navigation__item"></li>
-
-                <li class="nav-navigation__item">
-                  <a rel="external" class="nav-navigation__link"
-                    >Join as a sitter</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </div>
+      </nav>
     </header>
 
     <header class="header header--desktop row">
@@ -463,3 +433,12 @@
     </footer>
   </body>
 </html>
+<script>
+  const hamburgerBtn = document.getElementById("hamburgerBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  hamburgerBtn.addEventListener("click", () => {
+    hamburgerBtn.classList.toggle("active");
+    mobileMenu.classList.toggle("open");
+  });
+</script>

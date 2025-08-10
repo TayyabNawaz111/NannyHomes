@@ -56,68 +56,42 @@
   </head>
 
   <body>
-     <header class="header header--mobile">
+    <header class="header header--mobile">
       <div class="header-mobile__wrapper">
         <a aria-label="Nanny Homes" class="nav-logo__container">
           <img
             src="assets/logo.png"
             alt="Nanny Homes Logo"
-            style="height: 50px"
+            style="height: 110px"
           />
         </a>
-        <nav class="nav-navigation" role="navigation">
-          <ul class="nav-navigation__list">
-            <li
-              class="nav-navigation__item"
-              style="width: 68px; margin-right: 5px"
+
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <nav class="mobile-menu" id="mobileMenu">
+        <ul>
+          <li><a href="about-us.html">About us</a></li>
+          <li>
+            <a
+              target="_blank"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdNP8Rijk-23G29RNEh3hNVykRTKm1yH0IdRmsMXYgcqm3YHw/viewform?usp=header"
+              >Find a nanny</a
             >
-              <a rel="external" class="nav-navigation__link" href="index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-navigation__item" style="margin-right: 4px">
-              <a
-                target="_blank"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdNP8Rijk-23G29RNEh3hNVykRTKm1yH0IdRmsMXYgcqm3YHw/viewform?usp=header"
-                class="nav-primary-button nav-outline-button"
-                >Find a nanny</a
-              >
-            </li>
-            <li class="nav-navigation__item">
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLScwV8_0p6iPOWvXiPikCzJd69Rpak7beAmrjAkNtTGxq-UruQ/viewform?usp=header" target="_blank" class="login-dropdown-button nav-primary-button">
-                Find a job
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="login-dropdown" aria-hidden="true" style="display: none">
-          <li>
-            <h3 class="login-dropdown-title">I'm a...</h3>
           </li>
           <li>
-            <a class="nav-primary-button nav-outline-button">Parent</a>
-          </li>
-          <li>
-            <a class="nav-primary-button nav-outline-button">Sitter</a>
+            <a
+              target="_blank"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScwV8_0p6iPOWvXiPikCzJd69Rpak7beAmrjAkNtTGxq-UruQ/viewform?usp=header"
+              >Find a job</a
+            >
           </li>
         </ul>
-
-        <div class="header__content">
-          <nav class="nav-navigation container row" role="navigation">
-            <div class="nav-navigation__wrapper col-xs-offset-1 col-xs-10">
-              <ul class="nav-navigation__list">
-                <li class="nav-navigation__item"></li>
-
-                <li class="nav-navigation__item">
-                  <a rel="external" class="nav-navigation__link"
-                    >Join as a sitter</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </div>
+      </nav>
     </header>
 
     <header class="header header--desktop row">
@@ -150,7 +124,10 @@
             >
           </li>
           <li class="nav-navigation__item">
-            <button class="login-dropdown-button nav-primary-button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScwV8_0p6iPOWvXiPikCzJd69Rpak7beAmrjAkNtTGxq-UruQ/viewform?usp=header', '_blank')">
+            <button
+              class="login-dropdown-button nav-primary-button"
+              onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScwV8_0p6iPOWvXiPikCzJd69Rpak7beAmrjAkNtTGxq-UruQ/viewform?usp=header', '_blank')"
+            >
               Find a job
             </button>
           </li>
@@ -175,83 +152,141 @@
         style="display: none"
       ></div>
 
-   <section
-  class="nanny-info container"
-  style="padding: 40px 20px; max-width: 1000px; margin: auto"
->
-  <h1 style="font-size: 2rem; font-weight: bold; margin-bottom: 20px">
-    Privacy Policy – Nannyhomes
-  </h1>
+      <section
+        class="nanny-info container"
+        style="padding: 40px 20px; max-width: 1000px; margin: auto"
+      >
+        <h1 style="font-size: 2rem; font-weight: bold; margin-bottom: 20px">
+          Privacy Policy – Nannyhomes
+        </h1>
 
-  <p style="margin-bottom: 16px">
-    At Nannyhomes, your privacy is our top priority. This Privacy Policy outlines how we collect, use, disclose and protect your information when you visit our website or use our services. By accessing or using Nannyhomes, you agree to this policy.
-  </p>
+        <p style="margin-bottom: 16px">
+          At Nannyhomes, your privacy is our top priority. This Privacy Policy
+          outlines how we collect, use, disclose and protect your information
+          when you visit our website or use our services. By accessing or using
+          Nannyhomes, you agree to this policy.
+        </p>
 
-  <h2 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 16px">1. Information We Collect</h2>
-  <ul style="list-style-type: disc; padding-left: 20px; margin-bottom: 16px">
-    <li><strong>Personal Information:</strong> Full Name, Address, Contact Number, Email Address, CNIC/B-Form, Educational background and employment history, Profile pictures and references, Payment information.</li>
-    <li><strong>Child-related Information:</strong> Number of children, ages, care schedule preferences, and specific needs (medical, dietary, educational).</li>
-    <li><strong>Usage Data:</strong> IP address, browser type, device type, pages visited, session duration, and interaction data.</li>
-  </ul>
+        <h2 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 16px">
+          1. Information We Collect
+        </h2>
+        <ul
+          style="list-style-type: disc; padding-left: 20px; margin-bottom: 16px"
+        >
+          <li>
+            <strong>Personal Information:</strong> Full Name, Address, Contact
+            Number, Email Address, CNIC/B-Form, Educational background and
+            employment history, Profile pictures and references, Payment
+            information.
+          </li>
+          <li>
+            <strong>Child-related Information:</strong> Number of children,
+            ages, care schedule preferences, and specific needs (medical,
+            dietary, educational).
+          </li>
+          <li>
+            <strong>Usage Data:</strong> IP address, browser type, device type,
+            pages visited, session duration, and interaction data.
+          </li>
+        </ul>
 
-  <h2 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 16px">2. How We Use Your Information</h2>
-  <ul style="list-style-type: disc; padding-left: 20px; margin-bottom: 16px">
-    <li>Match families with suitable nannies and tutors</li>
-    <li>Process bookings, applications, and payments</li>
-    <li>Verify identity and ensure safety of users</li>
-    <li>Provide customer support and service updates</li>
-    <li>Improve website functionality and experience</li>
-    <li>Send notifications or promotional emails (optional)</li>
-  </ul>
+        <h2 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 16px">
+          2. How We Use Your Information
+        </h2>
+        <ul
+          style="list-style-type: disc; padding-left: 20px; margin-bottom: 16px"
+        >
+          <li>Match families with suitable nannies and tutors</li>
+          <li>Process bookings, applications, and payments</li>
+          <li>Verify identity and ensure safety of users</li>
+          <li>Provide customer support and service updates</li>
+          <li>Improve website functionality and experience</li>
+          <li>Send notifications or promotional emails (optional)</li>
+        </ul>
 
-  <h2 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 16px">3. Sharing and Disclosure of Information</h2>
-  <ul style="list-style-type: disc; padding-left: 20px; margin-bottom: 16px">
-    <li>With matched families and service providers</li>
-    <li>With third parties for background checks and payment processing</li>
-    <li>When legally required or to protect rights/safety</li>
-    <li>During business acquisitions or mergers (with notice)</li>
-  </ul>
-  <p style="margin-bottom: 16px">We do not sell your personal data to third parties.</p>
+        <h2 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 16px">
+          3. Sharing and Disclosure of Information
+        </h2>
+        <ul
+          style="list-style-type: disc; padding-left: 20px; margin-bottom: 16px"
+        >
+          <li>With matched families and service providers</li>
+          <li>
+            With third parties for background checks and payment processing
+          </li>
+          <li>When legally required or to protect rights/safety</li>
+          <li>During business acquisitions or mergers (with notice)</li>
+        </ul>
+        <p style="margin-bottom: 16px">
+          We do not sell your personal data to third parties.
+        </p>
 
-  <h2 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 16px">4. Data Protection and Security</h2>
-  <p style="margin-bottom: 16px">
-    We use secure servers, encrypted transactions, and role-based access control. Our team undergoes regular security training and audits. While we strive for full protection, no system is completely immune from online risks.
-  </p>
+        <h2 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 16px">
+          4. Data Protection and Security
+        </h2>
+        <p style="margin-bottom: 16px">
+          We use secure servers, encrypted transactions, and role-based access
+          control. Our team undergoes regular security training and audits.
+          While we strive for full protection, no system is completely immune
+          from online risks.
+        </p>
 
-  <h2 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 16px">5. Your Rights and Choices</h2>
-  <ul style="list-style-type: disc; padding-left: 20px; margin-bottom: 16px">
-    <li>Review or update your personal information</li>
-    <li>Request account or data deletion</li>
-    <li>Opt out of marketing emails</li>
-    <li>Correct any inaccurate data</li>
-  </ul>
-  <p style="margin-bottom: 16px">To make a request, contact us at <a href="mailto:support@nannyhomes.com">support@nannyhomes.com</a>.</p>
+        <h2 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 16px">
+          5. Your Rights and Choices
+        </h2>
+        <ul
+          style="list-style-type: disc; padding-left: 20px; margin-bottom: 16px"
+        >
+          <li>Review or update your personal information</li>
+          <li>Request account or data deletion</li>
+          <li>Opt out of marketing emails</li>
+          <li>Correct any inaccurate data</li>
+        </ul>
+        <p style="margin-bottom: 16px">
+          To make a request, contact us at
+          <a href="mailto:support@nannyhomes.com">support@nannyhomes.com</a>.
+        </p>
 
-  <h2 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 16px">6. Cookies and Tracking Technologies</h2>
-  <p style="margin-bottom: 16px">
-    We use cookies to understand user behavior, maintain sessions, and enhance your experience. You can manage cookies via your browser settings at any time.
-  </p>
+        <h2 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 16px">
+          6. Cookies and Tracking Technologies
+        </h2>
+        <p style="margin-bottom: 16px">
+          We use cookies to understand user behavior, maintain sessions, and
+          enhance your experience. You can manage cookies via your browser
+          settings at any time.
+        </p>
 
-  <h2 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 16px">7. Children's Privacy</h2>
-  <p style="margin-bottom: 16px">
-    We do not knowingly collect personal data from children under 13. Child-related data is only submitted by parents or guardians.
-  </p>
+        <h2 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 16px">
+          7. Children's Privacy
+        </h2>
+        <p style="margin-bottom: 16px">
+          We do not knowingly collect personal data from children under 13.
+          Child-related data is only submitted by parents or guardians.
+        </p>
 
-  <h2 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 16px">8. Changes to This Policy</h2>
-  <p style="margin-bottom: 16px">
-    We may update this policy occasionally. The latest version will always be posted on our website with the effective date. Continued use after updates indicates your acceptance.
-  </p>
+        <h2 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 16px">
+          8. Changes to This Policy
+        </h2>
+        <p style="margin-bottom: 16px">
+          We may update this policy occasionally. The latest version will always
+          be posted on our website with the effective date. Continued use after
+          updates indicates your acceptance.
+        </p>
 
-  <h2 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 16px">9. Contact Us</h2>
-  <p style="margin-bottom: 16px">
-    If you have questions or concerns, feel free to reach out:
-  </p>
-  <ul style="list-style-type: none; padding-left: 0; margin-bottom: 32px">
-    <li><strong>Email:</strong> <a href="mailto:support@nannyhomes.com">support@nannyhomes.com</a></li>
-    <li><strong>Phone:</strong> +92 XXX XXX XXXX</li>
-  </ul>
-</section>
-
+        <h2 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 16px">
+          9. Contact Us
+        </h2>
+        <p style="margin-bottom: 16px">
+          If you have questions or concerns, feel free to reach out:
+        </p>
+        <ul style="list-style-type: none; padding-left: 0; margin-bottom: 32px">
+          <li>
+            <strong>Email:</strong>
+            <a href="mailto:support@nannyhomes.com">support@nannyhomes.com</a>
+          </li>
+          <li><strong>Phone:</strong> +92 XXX XXX XXXX</li>
+        </ul>
+      </section>
 
       <script
         src="https://cdn.sittercity.com/0abd1144e379e1d52015a2737ea763dc3569b0b5/packs/js/banner_experiment-e9f58151eb7d42097618.js"
@@ -260,7 +295,7 @@
       ></script>
     </main>
 
-   <footer class="footer">
+    <footer class="footer">
       <div class="footer-columns">
         <div class="footer-column">
           <h3 class="footer-column-title">Nanny Homes</h3>
@@ -325,3 +360,12 @@
     </footer>
   </body>
 </html>
+<script>
+  const hamburgerBtn = document.getElementById("hamburgerBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  hamburgerBtn.addEventListener("click", () => {
+    hamburgerBtn.classList.toggle("active");
+    mobileMenu.classList.toggle("open");
+  });
+</script>

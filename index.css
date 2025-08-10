@@ -3519,22 +3519,40 @@ main {
   margin-bottom: 30px;
 }
 
+/* Make table scrollable on small screens */
 .comparison-table-container {
   overflow-x: auto;
-  background: white;
-  border-radius: 12px;
-  border: 1px solid #ffc0cb;
+  -webkit-overflow-scrolling: touch;
 }
 
 .comparison-table {
   width: 100%;
   border-collapse: collapse;
+  min-width: 500px;
 }
 
 .comparison-table th,
 .comparison-table td {
-  padding: 16px 24px;
+  padding: 10px;
   text-align: left;
+}
+
+@media (max-width: 500px) {
+  .comparison-table th,
+  .comparison-table td {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .section-title {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .cta-text {
+    font-size: 14px;
+    text-align: center;
+  }
 }
 
 .table-header {
@@ -3608,4 +3626,72 @@ main {
     padding-right: 0;
     margin-bottom: 15px;
   }
+}
+.header-mobile__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+}
+
+.hamburger-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  width: 26px;
+  margin-right: 20px;
+}
+
+.hamburger-btn span {
+  display: block;
+  height: 3px;
+  background-color: #333;
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  width: 50%;
+  max-width: 300px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-20px);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+}
+
+.mobile-menu.open {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 16px;
+}
+
+.mobile-menu ul li {
+  margin-bottom: 12px;
+}
+
+.mobile-menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  display: block;
+  padding: 8px 0;
+}
+
+.mobile-menu ul li a:hover {
+  color: #007bff;
 }
